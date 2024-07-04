@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Pesquisa de satisfação do cliente</title>
+</head>
+<body>
+    <h1>Pesquisa de Satisfação</h1>
+    <form method="post" action="processar-pesquisa.html">
+        <Section>
+            <h2>Dados Pessoais:</h2>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone">
+            </p>
+        </Section>
+        <section>
+            <h2>Responda as seguintes perguntas:</h2>
+            <p>
+                Como você classifica nosso atendimento?
+                <input type="radio" id="atendimento-excelente" name="atendimento" value="excelente">
+                <label class="radio-label" for="atendimento-excelente">Excelente</label>
+                <input type="radio" id="atendimento-bom" name="atendimento" value="bom">
+                <label class="radio-label" for="atendimento-bom">Bom</label>
+                <input type="radio" id="atendimento-regular" name="atendimento" value="regular">
+                <label class="radio-label" for="atendimento-regular">Regular</label>
+                <input type="radio" id="atendimento-ruim" name="atendimento" value="ruim">
+                <label class="radio-label" for="atendimento-ruim">Ruim</label>
+            <p>
+            <p>
+                Você recomendaria nosso produto para um amigo ou familiar?
+                <input type="radio" id="recomendaria-sim" name="recomendaria" value="sim">
+                <label class="radio-label" for="recomendaria-sim">Sim</label>
+                <input type="radio" id="recomendaria-nao" name="recomendaria" value="nao">
+                <label class="radio-label" for="recomendaria-nao">Não</label>
+            </p>
+            <p>
+                <label for="motivo">Qual o principal motivo da sua avaliação?</label><br>
+                <select id="motivo" name="motivo">
+                    <option value="qualidade">Qualidade dos produtos/serviços</option>
+                    <option value="atendimento">Atendimento recebido</option>
+                    <option value="preco">Preço</option>
+                    <option value="outro">Outro</option>
+                </select>
+           </p>
+           <p>
+                <input type="checkbox" id="autorizacao" name="autorizacao">
+                <label for="autorizacao">Autorizo o compartilhamento das minhas respostas com terceiros.</label>
+           </p>
+        </section>
+    </form>
+</body>
